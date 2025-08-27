@@ -49,3 +49,45 @@ callButtons.forEach((btn) => {
 clearHistoryBtn.addEventListener('click', () => {
   callHistoryContainer.innerHTML = '';
 });
+
+
+document.addEventListener('DOMContentLoaded', () => {
+  const copyBtns = document.querySelectorAll('.copy-btn'); // সব Copy button
+  const copyCountEl = document.getElementById('copy-count');
+  let count = 0;
+
+  copyBtns.forEach(btn => {
+    btn.addEventListener('click', () => {
+      count++;
+      copyCountEl.textContent = count;
+      alert('Text copied! Total copies: ' + count);
+    });
+  });
+});
+
+
+document.addEventListener('DOMContentLoaded', () => {
+  const copyBtns = document.querySelectorAll('.copy-btn'); // সব copy button
+  const copyCountEl = document.getElementById('copy-count'); // header copy count
+  let count = 0;
+
+  copyBtns.forEach(btn => {
+    btn.addEventListener('click', () => {
+      // button এর parent card থেকে serviceNumber h1 খুঁজে নাও
+      const card = btn.closest('.bg-white'); // parent card div
+      const serviceNumberEl = card.querySelector('.serviceNumber');
+      const number = serviceNumberEl.textContent.trim(); // number get
+
+      // Clipboard এ copy
+      navigator.clipboard.writeText(number).then(() => {
+        // Copy count update
+        count++;
+        copyCountEl.textContent = count;
+        // Alert
+        alert(`Hotline number ${number} copied! Total copies: ${count}`);
+      }).catch(err => {
+        console.error('Failed to copy: ', err);
+      });
+    });
+  });
+});

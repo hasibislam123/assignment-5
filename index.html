@@ -42,6 +42,7 @@
           <img src="assets/coin.png" alt="" class="w-6 h-6" />
         </div>
         <button class="bg-green-600 text-white rounded-xl px-3 py-1 text-sm">
+          <span id="copy-count">0</span>
           Copy
         </button>
       </div>
@@ -81,19 +82,18 @@
           <p class="serviceName font-bold text-sm sm:text-base">
             National Emergency Service
           </p>
-          <p class="text-gray-600 inline text-xs sm:text-sm">
-            National Emergency
-          </p>
+          <p class="text-gray-600 text-xs sm:text-sm">National Emergency</p>
           <h1 class="serviceNumber font-bold text-lg sm:text-2xl">999</h1>
           <button
-            class="btn btn-soft rounded-full text-xs sm:text-sm bg-gray-200 py-1"
+            class="w-[65px] h-[37px] btn btn-soft rounded-full text-xs sm:text-sm bg-gray-200 py-1"
           >
             National
           </button>
           <div class="flex gap-2">
             <button
-              class="btn flex-1 rounded-xl py-1 text-xs sm:text-sm bg-gray-100"
+              class="copy-btn btn btn-neutral btn-outline flex-1 border-stone-400 rounded-xl text-xs sm:text-sm"
             >
+              <i class="fa-solid fa-copy"></i>
               Copy
             </button>
             <button
@@ -120,14 +120,15 @@
           <p class="text-gray-600 text-xs sm:text-sm">Police</p>
           <h1 class="serviceNumber font-bold text-lg sm:text-2xl">999</h1>
           <button
-            class="btn btn-soft rounded-full text-xs sm:text-sm bg-gray-200 py-1"
+            class="w-[61px] h-[37px] btn btn-soft rounded-full text-xs sm:text-sm bg-gray-200 py-1"
           >
             Police
           </button>
           <div class="flex gap-2">
             <button
-              class="btn flex-1 rounded-xl py-1 text-xs sm:text-sm bg-gray-100"
+              class="copy-btn btn btn-neutral btn-outline flex-1 border-stone-400 rounded-xl text-xs sm:text-sm"
             >
+              <i class="fa-solid fa-copy"></i>
               Copy
             </button>
             <button
@@ -153,14 +154,15 @@
           <p class="text-gray-600 text-xs sm:text-sm">Fire Emergency</p>
           <h1 class="serviceNumber font-bold text-lg sm:text-2xl">999</h1>
           <button
-            class="btn btn-soft rounded-full text-xs sm:text-sm bg-gray-200 py-1"
+            class="w-[61px] h-[37px] btn btn-soft rounded-full text-xs sm:text-sm bg-gray-200 py-1"
           >
             Fire
           </button>
           <div class="flex gap-2">
             <button
-              class="btn flex-1 rounded-xl py-1 text-xs sm:text-sm bg-gray-100"
+              class="copy-btn btn btn-neutral btn-outline flex-1 border-stone-400 rounded-xl text-xs sm:text-sm"
             >
+              <i class="fa-solid fa-copy"></i>
               Copy
             </button>
             <button
@@ -185,16 +187,89 @@
             Ambulance service Numbers
           </p>
           <p class="text-gray-600 text-xs sm:text-sm">Medical Emergency</p>
-          <h1 class="serviceNumber font-bold text-lg sm:text-2xl">999</h1>
+          <h1 class="serviceNumber font-bold text-lg sm:text-2xl">
+            1994-999999
+          </h1>
           <button
-            class="btn btn-soft rounded-full text-xs sm:text-sm bg-gray-200 py-1"
+            class="w-[61px] h-[37px] btn btn-soft rounded-full text-xs sm:text-sm bg-gray-200 py-1"
           >
             Health
           </button>
           <div class="flex gap-2">
             <button
-              class="btn flex-1 rounded-xl py-1 text-xs sm:text-sm bg-gray-100"
+              class="copy-btn btn btn-neutral btn-outline flex-1 border-stone-400 rounded-xl text-xs sm:text-sm"
             >
+              <i class="fa-solid fa-copy"></i>
+              Copy
+            </button>
+            <button
+              class="call-btn btn flex-1 rounded-xl bg-green-600 text-white py-1 text-xs sm:text-sm"
+            >
+              <i class="fa-solid fa-phone mr-1"></i> Call
+            </button>
+          </div>
+        </div>
+
+        <!-- National Emergency Service -->
+        <div class="bg-white p-4 rounded-2xl shadow flex flex-col gap-3">
+          <div class="flex justify-between">
+            <div
+              class="h-12 w-12 rounded-xl bg-red-100 flex items-center justify-center"
+            >
+              <img src="assets/Bangladesh-Railway.png" alt="" class="w-6" />
+            </div>
+            <i class="fa-regular fa-heart text-lg red-heart cursor-pointer"></i>
+          </div>
+          <p class="serviceName font-bold text-sm sm:text-base">
+            Bangladesh Railway Service
+          </p>
+          <p class="text-gray-600 text-xs sm:text-sm">Bangladesh Railway</p>
+          <h1 class="serviceNumber font-bold text-lg sm:text-2xl">109</h1>
+          <button
+            class="w-[61px] h-[37px] btn btn-soft rounded-full text-xs sm:text-sm bg-gray-200 py-1"
+          >
+            Railway
+          </button>
+          <div class="flex gap-2">
+            <button
+              class="copy-btn btn btn-neutral btn-outline flex-1 border-stone-400 rounded-xl text-xs sm:text-sm"
+            >
+              <i class="fa-solid fa-copy"></i>
+              Copy
+            </button>
+            <button
+              class="call-btn btn flex-1 rounded-xl bg-green-600 text-white py-1 text-xs sm:text-sm"
+            >
+              <i class="fa-solid fa-phone mr-1"></i> Call
+            </button>
+          </div>
+        </div>
+
+        <!-- National Emergency Service -->
+        <div class="bg-white p-4 rounded-2xl shadow flex flex-col gap-3">
+          <div class="flex justify-between">
+            <div
+              class="h-12 w-12 rounded-xl bg-red-100 flex items-center justify-center"
+            >
+              <img src="assets/brac.png" alt="" class="w-6" />
+            </div>
+            <i class="fa-regular fa-heart text-lg red-heart cursor-pointer"></i>
+          </div>
+          <p class="serviceName font-bold text-sm sm:text-base">
+            brac Emergency Service
+          </p>
+          <p class="text-gray-600 text-xs sm:text-sm">brac Service</p>
+          <h1 class="serviceNumber font-bold text-lg sm:text-2xl">106</h1>
+          <button
+            class="w-[61px] h-[37px] btn btn-soft rounded-full text-xs sm:text-sm bg-gray-200 py-1"
+          >
+            brac
+          </button>
+          <div class="flex gap-2">
+            <button
+              class="copy-btn btn btn-neutral btn-outline flex-1 border-stone-400 rounded-xl text-xs sm:text-sm"
+            >
+              <i class="fa-solid fa-copy"></i>
               Copy
             </button>
             <button
@@ -219,16 +294,17 @@
             National Emergency Service
           </p>
           <p class="text-gray-600 text-xs sm:text-sm">National Emergency</p>
-          <h1 class="serviceNumber font-bold text-lg sm:text-2xl">999</h1>
+          <h1 class="serviceNumber font-bold text-lg sm:text-2xl">16216</h1>
           <button
-            class="btn btn-soft rounded-full text-xs sm:text-sm bg-gray-200 py-1"
+            class="w-[70px] h-[37px] btn btn-soft rounded-full text-xs sm:text-sm bg-gray-200 py-1"
           >
             National
           </button>
           <div class="flex gap-2">
             <button
-              class="btn flex-1 rounded-xl py-1 text-xs sm:text-sm bg-gray-100"
+              class="copy-btn btn btn-neutral btn-outline flex-1 border-stone-400 rounded-xl text-xs sm:text-sm"
             >
+              <i class="fa-solid fa-copy"></i>
               Copy
             </button>
             <button
@@ -253,16 +329,17 @@
             National Emergency Service
           </p>
           <p class="text-gray-600 text-xs sm:text-sm">National Emergency</p>
-          <h1 class="serviceNumber font-bold text-lg sm:text-2xl">999</h1>
+          <h1 class="serviceNumber font-bold text-lg sm:text-2xl">16445</h1>
           <button
-            class="btn btn-soft rounded-full text-xs sm:text-sm bg-gray-200 py-1"
+            class="w-[70px] h-[37px] btn btn-soft rounded-full text-xs sm:text-sm bg-gray-200 py-1"
           >
             National
           </button>
           <div class="flex gap-2">
             <button
-              class="btn flex-1 rounded-xl py-1 text-xs sm:text-sm bg-gray-100"
+              class="copy-btn btn btn-neutral btn-outline flex-1 border-stone-400 rounded-xl text-xs sm:text-sm"
             >
+              <i class="fa-solid fa-copy"></i>
               Copy
             </button>
             <button
@@ -287,84 +364,17 @@
             National Emergency Service
           </p>
           <p class="text-gray-600 text-xs sm:text-sm">National Emergency</p>
-          <h1 class="serviceNumber font-bold text-lg sm:text-2xl">999</h1>
+          <h1 class="serviceNumber font-bold text-lg sm:text-2xl">163</h1>
           <button
-            class="btn btn-soft rounded-full text-xs sm:text-sm bg-gray-200 py-1"
+            class="w-[70px] h-[37px] btn btn-soft rounded-full text-xs sm:text-sm bg-gray-200 py-1"
           >
             National
           </button>
           <div class="flex gap-2">
             <button
-              class="btn flex-1 rounded-xl py-1 text-xs sm:text-sm bg-gray-100"
+              class="copy-btn btn btn-neutral btn-outline flex-1 border-stone-400 rounded-xl text-xs sm:text-sm"
             >
-              Copy
-            </button>
-            <button
-              class="call-btn btn flex-1 rounded-xl bg-green-600 text-white py-1 text-xs sm:text-sm"
-            >
-              <i class="fa-solid fa-phone mr-1"></i> Call
-            </button>
-          </div>
-        </div>
-
-        <!-- National Emergency Service -->
-        <div class="bg-white p-4 rounded-2xl shadow flex flex-col gap-3">
-          <div class="flex justify-between">
-            <div
-              class="h-12 w-12 rounded-xl bg-red-100 flex items-center justify-center"
-            >
-              <img src="assets/emergency.png" alt="" class="w-6" />
-            </div>
-            <i class="fa-regular fa-heart text-lg red-heart cursor-pointer"></i>
-          </div>
-          <p class="serviceName font-bold text-sm sm:text-base">
-            National Emergency Service
-          </p>
-          <p class="text-gray-600 text-xs sm:text-sm">National Emergency</p>
-          <h1 class="serviceNumber font-bold text-lg sm:text-2xl">999</h1>
-          <button
-            class="btn btn-soft rounded-full text-xs sm:text-sm bg-gray-200 py-1"
-          >
-            National
-          </button>
-          <div class="flex gap-2">
-            <button
-              class="btn flex-1 rounded-xl py-1 text-xs sm:text-sm bg-gray-100"
-            >
-              Copy
-            </button>
-            <button
-              class="call-btn btn flex-1 rounded-xl bg-green-600 text-white py-1 text-xs sm:text-sm"
-            >
-              <i class="fa-solid fa-phone mr-1"></i> Call
-            </button>
-          </div>
-        </div>
-
-        <!-- National Emergency Service -->
-        <div class="bg-white p-4 rounded-2xl shadow flex flex-col gap-3">
-          <div class="flex justify-between">
-            <div
-              class="h-12 w-12 rounded-xl bg-red-100 flex items-center justify-center"
-            >
-              <img src="assets/emergency.png" alt="" class="w-6" />
-            </div>
-            <i class="fa-regular fa-heart text-lg red-heart cursor-pointer"></i>
-          </div>
-          <p class="serviceName font-bold text-sm sm:text-base">
-            National Emergency Service
-          </p>
-          <p class="text-gray-600 text-xs sm:text-sm">National Emergency</p>
-          <h1 class="serviceNumber font-bold text-lg sm:text-2xl">999</h1>
-          <button
-            class="btn btn-soft rounded-full text-xs sm:text-sm bg-gray-200 py-1"
-          >
-            National
-          </button>
-          <div class="flex gap-2">
-            <button
-              class="btn flex-1 rounded-xl py-1 text-xs sm:text-sm bg-gray-100"
-            >
+              <i class="fa-solid fa-copy"></i>
               Copy
             </button>
             <button
